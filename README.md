@@ -4,7 +4,7 @@ A simple Streamlit web app that finds and displays Wikipedia information about a
 
 ⚙️ Setup Instructions
 1️⃣ Clone this repository
-git clone https://github.com/yourusername/Wikipedia_Info_Finder.git
+git clone https://github.com/Parmeshwar-razz/Wikipedia-Detail-Scraper.git
 cd Wikipedia_Info_Finder
 
 2️⃣ Install dependencies
