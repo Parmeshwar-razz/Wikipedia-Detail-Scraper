@@ -1,40 +1,3 @@
-# from bs4 import BeautifulSoup
-# import chromedriver_autoinstaller
-# from selenium import webdriver
-# import streamlit as st
-
-# chromedriver_autoinstaller.install()
-# if "driver" not in st.session_state:
-#     st.session_state.driver = webdriver.Chrome()
-# name = st.text_input("Enter the name").replace(" ",'+')
-# # link = None
-# if st.button("Find Details "):
-#     links = 'https://www.google.com/search?q='+name+'+wikipedia'
-#     # driver = webdriver.Chrome()
-#     st.session_state.driver.get(links)
-#     soup = BeautifulSoup(st.session_state.driver.page_source,'html.parser')
-#     # wikipedia link extractor 
-#     link = None
-#     for i in soup.find_all('div'):
-#         try:
-#             link_temp = i.find('a',href=True)
-#             if 'en.wikipedia.org' in link_temp['href']:
-#                 link = link_temp
-#                 st.session_state.link= link_temp
-#                 break
-#         except:
-#             pass
-#     st.success(link['href'])
-#     st.success("for visit this link click visit ")
-#     # st.button("visit")
-
-# if st.button("Visit"):
-#     person_link = st.session_state.link['href']
-#     st.session_state.driver.get(person_link)
-#     soup = BeautifulSoup(st.session_state.driver.page_source,'html.parser')
-#     for p in soup.find_all('p'):
-#         st.write(p.text)
-
 from bs4 import BeautifulSoup
 import chromedriver_autoinstaller
 from selenium import webdriver
@@ -107,3 +70,4 @@ if "link" in st.session_state and st.button("📖 Visit Wikipedia Page"):
         """,
         unsafe_allow_html=True
     )
+
